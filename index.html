@@ -10,7 +10,57 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
     <style>
-      /* Add your CSS here. */
+
+        body {
+          background: rgb(128, 128, 128);
+        }
+
+        #site-header {
+        background-color: #ffffff;
+        }
+
+        #site-header .row {
+          width: 1440px;
+          margin: 0 auto;
+          padding:20px;
+        }
+
+        #content {
+          width: 1440px;
+          margin:0 auto;
+          padding: 20px 0;
+          border-radius: 5px;
+          background-color: #818181;
+          
+        }
+
+        footer {
+          width: 1440px;
+          margin: -20px auto;
+          border-radius: 5px;
+          padding-bottom: 30px;
+          background-color: #818181;
+        }
+
+        .row {
+          display: flex;
+        }
+
+        .row > div {
+          background-color: #f4f4f4;
+          border: 1px solid #8d8d8d;
+          border-radius: 3px;
+          text-align: center;
+          padding: 40px;
+        }
+
+        .col-100, .col-50, .col-33, .col-a {
+          flex: 1;
+        }
+
+        .col-b {
+          width: 200px;
+        }
     </style>
   </head>
   <body>
@@ -39,8 +89,7 @@
           <div class="col-33">col-33</div>
         </div>
       </div>
-
-      <footer>
+       <footer>
         <div class="row">
           <div class="col-100">footer: col-100</div>
         </div>
